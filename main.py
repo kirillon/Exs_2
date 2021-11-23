@@ -3,7 +3,7 @@ from random import randint
 
 from PyQt5 import uic
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPainter, QPen, QBrush
+from PyQt5.QtGui import QPainter, QPen, QBrush, QColor
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
 
@@ -22,7 +22,7 @@ class MainPage(QMainWindow):
         if self.do_paint:
             painter = QPainter(self)
             painter.setBrush(QBrush(QColor("#c56c00")))
-            painter.drawEllipse(randint(0,781), randint(0,431), 200, 200)
+            painter.drawEllipse(randint(0,500), randint(0,300), randint(10,700), randint(10,700))
 
             painter.end()
 
